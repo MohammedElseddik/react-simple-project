@@ -1,4 +1,5 @@
 import React from 'react';
+import Button from '../button/buttons';
 
 const AddUser = (props) => {
   const addUserHandler = (event) => {
@@ -10,7 +11,7 @@ const AddUser = (props) => {
       <input id="user-name" type="text" required />
       <label htmlFor="age">User Name</label>
       <input id="age" type="text" required />
-      <button type="submit">Add User</button>
+      <Button type="submit">Add User</Button>
     </form>
   );
 };
