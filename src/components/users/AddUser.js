@@ -16,11 +16,13 @@ const AddUser = (props) => {
   const addUserHandler = (event) => {
     event.preventDefault();
     console.log(parseInt(ageInput));
-    if (nameInput.trim().length === 0 || ageInput.trim().length === 0) return;
-
-    if (parseInt(ageInput) < 1) return;
-
-    console.log(nameInput, ageInput);
+    if (
+      nameInput.trim().length === 0 ||
+      ageInput.trim().length === 0 ||
+      parseInt(ageInput) < 1
+    )
+      return;
+    console.log('hello', nameInput, ageInput);
     setNameInput('');
     setageInput('');
   };
