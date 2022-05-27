@@ -23,6 +23,7 @@ const AddUser = (props) => {
     )
       return;
     console.log('hello', nameInput, ageInput);
+    props.onAddUser(nameInput, ageInput);
     setNameInput('');
     setageInput('');
   };
