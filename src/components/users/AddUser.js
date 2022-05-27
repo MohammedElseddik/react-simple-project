@@ -31,9 +31,21 @@ const AddUser = (props) => {
   return (
     <form onSubmit={addUserHandler}>
       <label htmlFor="user-name">User Name</label>
-      <input id="user-name" type="text" required onChange={nameInputHandler} />
+      <input
+        id="user-name"
+        type="text"
+        value={nameInput}
+        required
+        onChange={nameInputHandler}
+      />
       <label htmlFor="age">User Name</label>
-      <input id="age" type="number" required onChange={ageInputHandler} />
+      <input
+        id="age"
+        type="number"
+        value={ageInput}
+        required
+        onChange={ageInputHandler}
+      />
       <Button type="submit">Add User</Button>
     </form>
   );
