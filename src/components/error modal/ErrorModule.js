@@ -1,6 +1,7 @@
 import React from 'react';
 
 const ErrorModule = (props) => {
+  console.log(props);
   return (
     <div>
       <header>
