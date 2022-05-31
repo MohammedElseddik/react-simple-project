@@ -32,13 +32,18 @@ const AddUser = (props) => {
     setageInput('');
   };
 
-  const errorHandler = () => {
+  const hideErrorModalHandler = () => {
     setError(null);
   };
 
   return (
     <>
-      {error && <ErrorModule errorMessage={error.message} />}
+      {error && (
+        <ErrorModule
+          errorMessage={error.message}
+          hideModal={hideErrorModalHandler}
+        />
+      )}
       <form onSubmit={addUserHandler}>
         <label htmlFor="user-name">User Name</label>
         <input

@@ -1,4 +1,5 @@
 import React from 'react';
+import Button from '../button/buttons';
 
 const ErrorModule = (props) => {
   console.log(props);
@@ -13,7 +14,7 @@ const ErrorModule = (props) => {
         </div>
       </main>
       <footer>
-        <button>Cancel</button>
+        <Button onClick={props.hideModal}>Cancel</Button>
       </footer>
     </div>
   );
